@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://yuri_pramos@bitbucket.org/yuri_pramos/yuriramos.com.git"
+    "url": "git@bitbucket.org:yuripramos/yuriramos.com.git"
   },
   "author": "Yuri Ramos",
   "license": "ISC",
