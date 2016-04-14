@@ -147,6 +147,24 @@ button{
 /*----------------------------------------------------
  3.	Header Part
 ------------------------------------------------------*/
+.fullhd-header{
+	display:none;
+}
+@media screen and (min-width: 1367px) {
+	.onlylowres{
+		display: none;	
+	}
+	.fullhd-header{
+		display:block;
+		background-size:cover;
+		width:100%;
+		position:relative;
+	}
+	.fullhd-header video{
+		width:100%;
+	}
+}
+
 header {
 	position:relative;
 }
@@ -155,7 +173,7 @@ header {
 	margin:0 auto !important;
 	background:#CACACA;
 }
-.bannerText {
+.bannerText{
 	position:absolute;
 	left:0;
 	right:0;
@@ -163,17 +181,26 @@ header {
 	text-align:center;
 	padding:30px 0 30px;
 	max-width:960px;
+	min-height:200px;
 	border:1px solid #fff;
-	background: rgba(0, 0, 0, 0.3);
- filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000, endColorstr=#b2000000);
+	background: rgba(0, 0, 0, 0.4);
+ 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000, endColorstr=#b2000000);
 	zoom: 1;
+	
+	.animator-title, .animator-title2{
+		font-size:28px;
+	}
+		.rotate{
+			color:#B4FF07;
+		}
 }
-.bannerText h1 {
-	text-transform:uppercase;
+
+.BannerText h1 {
+	text-transform:uppercase !important;
 }
-.bannerText h2 {
+ .bannerText h2 {
+	text-transform:none !important;
 	font-size:34px;
-	text-transform:none;
 }
 /*------------------------------------
 	3.1 Slide show background control

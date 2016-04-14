@@ -24,6 +24,10 @@
 <link type="text/css" rel="stylesheet" id="theme" href="css/jquery-ui-1.8.16.custom.css">
 <link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
 <!--endbuild-->
+
+<!--build:css css/titleanimation.css-->
+<link type="text/css" rel="stylesheet" href="css/simpletextrotator.css">
+<!--endbuild-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
 <!--font-family: 'Open Sans', sans-serif;-->
 <!-- font css style-->
@@ -41,7 +45,7 @@
 <div class="wrapper" id="wrapper">
   <header>
     <!--banner inicio-->
-    <div class="banner row" id="banner">
+    <div class="banner row onlylowres" id="banner">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd">
         <!--slider inicio-->
         <div id="ri-grid" class="ri-grid ri-grid-size-2"> <img class="ri-loading-image" src="images/loading.gif"/>
@@ -102,9 +106,21 @@
       </div>
     </div>
     <!--banner end-->
+
+    <div class="fullhd-header">
+      <video autoplay loop>
+        <source src="video/plug.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
     <div class="bannerText container">
-      <h1>Yuri Ramos</h1>
-      <h2>Front-end Developer & Webdesigner</h2>
+     
+        <p class="animator-title">Desenvolvimento de<span class="rotate"> sites responsivos, sites otimizados para o google, idéias</span></p>
+            <h1>Yuri Ramos</h1>
+            <h2>Front-end Developer & Webdesigner</h2>
+     
+      </div>
+     
     </div>
     <!--menu inicio-->
     <div class="menu">
@@ -164,8 +180,8 @@
         <li class="sites col-xs-6 col-sm-4 col-md-3 col-lg-3">
           <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a id="portfolio1" rel="lightbox-demo" href="images/portfolio/big/dnapharma.png" title="Site responsivo em HTML5 da farmácia de manipulação DNAPHARMA" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://www.clicksoft.com.br/dnapharma/" title="Link do Projeto" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/thumb/dnapharma-thumb.png" alt=""  > </div>
         </li>
-        <li class="sites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/capgov.png" title="Portal Capgov com sistema de visualização de sprints de todos os projetos internos" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://capgov.cos.ufrj.br/capgov/" title="Link do Projeto" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/thumb/capgov-thumb.png" alt="" > </div>
+         <li class="sites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/viva.png" title="Hotsite Grandes atores e atualizações diversas" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://www.canalviva.com.br" title="Link do Projeto" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/thumb/viva-thumb.png" alt="" > </div>
         </li>
         <li class="sites col-xs-6 col-sm-4 col-md-3 col-lg-3">
           <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/soulfit.png" title="Site responsivo da empresa SoulFit Consultoria" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://www.soulfitconsultoria.com.br/" title="Link do Projeto" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/thumb/soulfit-thumb.png" alt="" > </div>
@@ -173,8 +189,8 @@
         <li class="sites col-xs-6 col-sm-4 col-md-3 col-lg-3">
           <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/rzk.png" title="Participação no front-end do site responsivo da loja virtual virus" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="https://www.rzk.com.br/" title="Link do Projeto" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/thumb/rzk-thumb.png" alt="" > </div>
         </li>
-        <li class="sites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/viva.png" title="Hotsite Grandes atores e atualizações diversas" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://www.canalviva.com.br" title="Link do Projeto" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/thumb/viva-thumb.png" alt="" > </div>
+         <li class="sites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/capgov.png" title="Portal Capgov com sistema de visualização de sprints de todos os projetos internos" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://capgov.cos.ufrj.br/capgov/" title="Link do Projeto" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/thumb/capgov-thumb.png" alt="" > </div>
         </li>
         <li class="sites col-xs-6 col-sm-4 col-md-3 col-lg-3">
           <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/sexyhot.png" title="Participação em inúmeras features" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://www.canalsexyhot.com.br/" title="Link do Projeto" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/thumb/sexyhot-thumb.png" alt="" > </div>
@@ -573,7 +589,11 @@
 <script src="js/custom.js"></script>
 <script type="text/javascript" src="js/jquery.placeholder.js"></script>
 <script type="text/javascript" src="js/stickUp.js"></script>
-<!-- endbuild -->
+<!--endbuild-->
+
+<!--build:js js/titleanimator.js-->
+<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+<!--endbuild-->
 
 <script type="text/javascript">
 jQuery(function($) {
@@ -612,6 +632,11 @@ $( ".navbar-toggle" ).click(function() {
   $( ".navbar-collapse" ).removeClass( "hideClass" );
 });
 
+$(".rotate").textrotator({
+  animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+  separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+  speed: 7000 // How many milliseconds until the next word show.
+});
 
 });
 </script>
@@ -627,7 +652,7 @@ $( ".navbar-toggle" ).click(function() {
 <script type="text/javascript" src="js/linguagem.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.easypiechart.js"></script>
-<!-- endbuild -->
+<!--endbuild-->
 
 <!-- <script type="text/javascript" src="js/jquery.contact.js"></script> -->
 

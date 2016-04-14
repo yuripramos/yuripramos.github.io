@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var plumber = require('gulp-plumber');
 
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
@@ -22,6 +23,9 @@ gulp.task('useref', function(){
 gulp.task('sass', function() {
   return gulp.src('app/scss/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass())
+    .pipe(plumber({
+      errorHandler: onError
+    }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
       stream: true
@@ -38,6 +42,9 @@ gulp.task('browserSync', function() {
 
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
+  .pipe(plumber({
+      errorHandler: onError
+    }))
   .pipe(gulp.dest('dist/fonts'))
 });
 
@@ -52,6 +59,9 @@ gulp.task('images', function(){
   .pipe(cache(imagemin({
       interlaced: true
     })))
+  .pipe(plumber({
+      errorHandler: onError
+    }))
   .pipe(gulp.dest('dist/images'))
 });
 
@@ -62,6 +72,7 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
   // Reloads the browser whenever HTML or JS files change
   gulp.watch('app/*.html', browserSync.reload); 
   gulp.watch('app/js/*.js', browserSync.reload); 
+
 });
 
 
