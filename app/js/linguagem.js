@@ -71,6 +71,9 @@ aLangKeys['en']['contatotitulo']='Contact me';
 aLangKeys['en']['contatodetails']='Request your budget and/or feel free to ask what you want!';
 aLangKeys['en']['detalhescontato']='Details of Contact';
 aLangKeys['en']['falacomigo']='Let me hear you!';
+//aLangKeys['en']['animacao-header1']='Developing';
+//aLangKeys['en']['animacao-header2']='responsive sites, sites optimized for google, ideas';
+
 
 
 aLangKeys['pt']['home']='Home';
@@ -138,7 +141,19 @@ aLangKeys['pt']['contatotitulo']='Entre em contato';
 aLangKeys['pt']['contatodetails']='Solicite seu orçamento e/ou fique a vontade de perguntar o que deseja!';
 aLangKeys['pt']['detalhescontato']='Detalhes de contato';
 aLangKeys['pt']['falacomigo']='Fala Comigo!';
+  
+    var lang = window.navigator.language.split("-")[0];
 
+    $('.tr').each(function(i){
+          $(this).text(aLangKeys[lang][ $(this).attr('data-key')]);   
+    });
+
+    if(lang == "en"){
+      $(".animator-title").hide();
+    }
+    else{
+      $(".animator-title").show();
+    }
 
 
     // onclick behavior
