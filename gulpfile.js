@@ -23,9 +23,7 @@ gulp.task('useref', function(){
 gulp.task('sass', function() {
   return gulp.src('app/scss/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass())
-    .pipe(plumber({
-      errorHandler: onError
-    }))
+ 
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
       stream: true
@@ -47,7 +45,6 @@ gulp.task('fonts', function() {
     }))
   .pipe(gulp.dest('dist/fonts'))
 });
-
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 });
