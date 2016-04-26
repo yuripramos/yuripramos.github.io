@@ -142,7 +142,15 @@ aLangKeys['pt']['contatodetails']='Solicite seu orçamento e/ou fique a vontade 
 aLangKeys['pt']['detalhescontato']='Detalhes de contato';
 aLangKeys['pt']['falacomigo']='Fala Comigo!';
   
+
     var lang = window.navigator.language.split("-")[0];
+    if((lang != "en") && (lang != "pt")){
+      var lang = "en";
+
+      $('.tr').each(function(i){
+          $(this).text(aLangKeys[lang][ $(this).attr('data-key')]);   
+      });
+    }
 
     $('.tr').each(function(i){
           $(this).text(aLangKeys[lang][ $(this).attr('data-key')]);   
@@ -155,6 +163,12 @@ aLangKeys['pt']['falacomigo']='Fala Comigo!';
       $(".animator-title").show();
     }
 
+      // if(lang =="pt"){
+    
+      //   $("a[href='resumee.pdf']").attr('href', 'cv.pdf');
+      // }
+
+
 
     // onclick behavior
     $('.lang').click( function() {
@@ -162,20 +176,25 @@ aLangKeys['pt']['falacomigo']='Fala Comigo!';
 
         // translate all translatable elements
         $('.tr').each(function(i){
-          $(this).text(aLangKeys[lang][ $(this).attr('data-key')]);
+         $(this).text(aLangKeys[lang][ $(this).attr('data-key')]).addClass('animated lightSpeedIn');
 
-          
-        });
-
+        }); 
         //hotffix placeholder change according to placeholder
 
        // if (lang = en) {
         	//document.getElementsByName('name')[0].placeholder='Your name...'; 	
-       // }
-         
-        	
-			
-    } );
+       // 
+      });
+
+    $('.lang').click(function(){
+        var lang2 = $(this).attr('id');
+        if(lang2=="pt"){ 
+          $("a[href='resumee.pdf']").attr('href', 'cv.pdf');
+        }
+        else{
+          $("a[href='cv.pdf']").attr('href', 'resumee.pdf');
+        }
+    });
 
 
 
