@@ -177,7 +177,12 @@ aLangKeys['pt']['falacomigo']='Fala Comigo!';
         // translate all translatable elements
         $('.tr').each(function(i){
          $(this).text(aLangKeys[lang][ $(this).attr('data-key')]).addClass('animated lightSpeedIn');
-
+             if(lang == "en"){
+                $(".animator-title").hide();
+              }
+              else{
+                $(".animator-title").show();
+              }
         }); 
         //hotffix placeholder change according to placeholder
 
