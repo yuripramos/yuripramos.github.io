@@ -21,7 +21,7 @@ gulp.task('useref', function(){
 });
 
 gulp.task('sass', function() {
-  return gulp.src('app/scss/*.scss') // Gets all files ending with .scss in app/scss
+  return gulp.src('app/scss/*.scss') // Gets all files ending with .scss in app/scss adicionando mais comentario
     .pipe(sass())
  
     .pipe(gulp.dest('app/css'))
