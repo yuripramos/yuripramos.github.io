@@ -1,5 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.yuriramos\.com$
-RewriteRule ^(.*)$ "http\:\/\/yuriramos\.com\/$1" [R=301,L]
-
