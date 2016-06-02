@@ -16,6 +16,7 @@
 	11. Get in touch Style
 	12. Footer Style
 	13. Responsive style
+	14. Video Style
 		
 		
 ---------------------------------------------------------------------------------
@@ -1391,4 +1392,52 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
  left:0px;
  top:0px;
 }
+}
+
+
+/*---------------------------------------------------------------------------------
+/* 14. Video Style
+-------------------------------------------------------------------------------*/
+.video{
+	background:#fff;
+
+	h2{
+		color: #ff675f;
+		margin-left: 10px;
+	}
+	p{
+		color: #84868d;
+	    /* font-size: 13px; */
+	    line-height: 18px;
+	}
+	.fa-play-circle-o{
+		color: #ff675f !important;
+	}
+	.container{
+		padding-top: 85px;
+    	padding-bottom: 90px;
+	}
+	
+}
+
+.video video{
+	margin:0 auto;
+	width:990px;
+	height:auto;
+}
+ @media screen and (max-width: 767px) {
+ 	.video video{
+ 		width: 550px;
+ 	}
+}
+ @media screen and (min-width: 768px) and (max-width: 991px) {
+ 	.video video{
+ 		width: 650px;
+ 	}
+}
+  @media screen and (min-width: 991px) and (max-width: 1191px) {
+ 	.video video{
+ 		width: 750px;
+ }
+
 }
