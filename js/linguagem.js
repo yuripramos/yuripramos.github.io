@@ -72,6 +72,24 @@ aLangKeys['en']['contatodetails']='Request your budget and/or feel free to ask w
 aLangKeys['en']['detalhescontato']='Details of Contact';
 aLangKeys['en']['falacomigo']='Let me hear you!';
 aLangKeys['en']['ready']='Ready?';
+aLangKeys['en']['logo 1']='Visual identity for an australian company';
+aLangKeys['en']['site 1']='Development for the healthy fitness company SoulFit';
+aLangKeys['en']['site 2']='Newsletter for a tv programa called TVZ';
+aLangKeys['en']['site 3']='Hotsite for the TV channel Premiere UFC';
+aLangKeys['en']['site 4']='Hotsite \'Big Actors\' and many features for the responsive site';
+aLangKeys['en']['site 5']='E-commerce website for Virus Store';
+aLangKeys['en']['site 6']='Features for the responsive website and promotions for channel Sexy Hot';
+aLangKeys['en']['site 7']='Development of the website Sexy Hot Awards';
+aLangKeys['en']['site 8']='Website responsive for the company DNAPHARMA';
+aLangKeys['en']['ux 1']='Form Responsive w/ webservice for clients of company SoulFit';
+aLangKeys['en']['logo 2']='Logo for Soul Fit Company';
+aLangKeys['en']['logo 3']='Logo for Law Office Borges & Guerra';
+aLangKeys['en']['ux 3']='Folder for the preparatory course from Senhora da Pena School';
+aLangKeys['en']['logo 4']='Logo for a healthy and fitness australian company';
+aLangKeys['en']['logo 5']='Logo for a company of parties and events';
+aLangKeys['en']['logo 6']='Logo for the construction company Tavares & Siqueira';
+aLangKeys['en']['site 9']='Website for the governmental company CAPGOV';
+aLangKeys['en']['logo 7']='Logo for the book fair event';
 
 //aLangKeys['en']['animacao-header1']='Developing';
 //aLangKeys['en']['animacao-header2']='responsive sites, sites optimized for google, ideas';
@@ -144,7 +162,24 @@ aLangKeys['pt']['contatodetails']='Solicite seu orçamento e/ou fique a vontade 
 aLangKeys['pt']['detalhescontato']='Detalhes de contato';
 aLangKeys['pt']['falacomigo']='Fala Comigo!';
 aLangKeys['pt']['ready']='Pronto?';
-  
+aLangKeys['pt']['logo 1']='Desenvolvimento da identidade visual para uma brand australiana de prestação de serviços';
+aLangKeys['pt']['site 1']='Desenvolvimento do portal da empresa de saúde SoulFit';
+aLangKeys['pt']['site 2']='Newsletter para o programa de tv chamado TVZ';
+aLangKeys['pt']['site 3']='Hotsite para o canal Premiere UFC';
+aLangKeys['pt']['site 4']='Hotsite Grandes Atores e diversas funcionalidades responsivas';
+aLangKeys['pt']['site 5']='Website para a loja virtual Virus';
+aLangKeys['pt']['site 6']='Diversas funcionalidades para o responsivo e campanhas para o canal Sexy Hot';
+aLangKeys['pt']['site 7']='Desenvolvimento do site Prêmio Sexy Hot';
+aLangKeys['pt']['site 8']='Website responsivo para a empresa DNAPHARMA';
+aLangKeys['pt']['ux 1']='Formulário Responsivo w/ webservice para clientes da empresa Soul Fit';
+aLangKeys['pt']['logo 3']='Logo para o escritório de advocacia Borges & Guerra';
+aLangKeys['pt']['ux 3']='Folder para o curso preparatório do colégio Senhora da Pena';
+aLangKeys['pt']['logo 4']='Logo para uma empresa australiana de saúde';
+aLangKeys['pt']['logo 5']='Logo para uma empresa de animações de festas';
+aLangKeys['pt']['logo 6']='Logo para a construtora Tavares & Videira';
+aLangKeys['pt']['site 9']='Website para a empresa governamental CAPGOV';
+aLangKeys['pt']['logo 7']='Logo para feira literária na chapada diamantina';
+
 
     var lang = window.navigator.language.split("-")[0];
     if((lang != "en") && (lang != "pt")){
