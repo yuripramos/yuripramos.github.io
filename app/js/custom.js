@@ -135,6 +135,23 @@ $(function() {
       }
     }
   });
+
+
+
+
+jQuery(".lightCon").hover(function(){
+ 	jQuery(this).find(".desc-port").css("opacity","1");},
+ 	function(){
+ 	jQuery(this).find(".desc-port").css("opacity","0");
+ 	});
+
+jQuery(".lightCon").focus(function(){
+ 	jQuery(this).find(".desc-port").css("opacity","1");},
+ 	function(){
+ 	jQuery(this).find(".desc-port").css("opacity","0");
+ 	});
+
+
 });
 
 

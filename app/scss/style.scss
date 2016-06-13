@@ -917,6 +917,29 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 #pbCloseBtn {
 	position:absolute !important;
 }
+
+.desc-port {
+  background: #FFA503;
+  bottom: 0;
+  display:inline;
+  opacity: 0;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+  width: 100%;
+  -webkit-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  position:absolute;
+  z-index: 99999;
+  min-height: 30px;
+  }
+.desc-port:hover{
+  opacity: 1;
+}
+
 /*----------------------------------------------------
  11. contato style
 ------------------------------------------------------*/
