@@ -11,6 +11,11 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var plumber = require('gulp-plumber');
 
+
+var onError = function (err) {  
+  console.log(err);
+ };
+
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
     .pipe(useref())

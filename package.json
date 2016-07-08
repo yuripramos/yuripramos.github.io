@@ -1,14 +1,14 @@
 {
   "name": "Package",
   "version": "1.0.0",
-  "description": "sem descricao por enquanto",
+  "description": "Minha pagina pessoal",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:yuripramos/yuriramos.com.git"
+    "url": "git@github.com:yuripramos/yuripramos.github.io.git"
   },
   "author": "Yuri Ramos",
   "license": "ISC",
