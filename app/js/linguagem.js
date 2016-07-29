@@ -90,6 +90,7 @@ aLangKeys['en']['logo 5']='Logo for a company of parties and events';
 aLangKeys['en']['logo 6']='Logo for the construction company Tavares & Siqueira';
 aLangKeys['en']['site 9']='Website for the governmental company CAPGOV';
 aLangKeys['en']['logo 7']='Logo for the book fair event';
+aLangKeys['en']['site 10']='Front-end developer responsible for new features during this year';
 
 //aLangKeys['en']['animacao-header1']='Developing';
 //aLangKeys['en']['animacao-header2']='responsive sites, sites optimized for google, ideas';
@@ -179,6 +180,7 @@ aLangKeys['pt']['logo 5']='Logo para uma empresa de animações de festas';
 aLangKeys['pt']['logo 6']='Logo para a construtora Tavares & Videira';
 aLangKeys['pt']['site 9']='Website para a empresa governamental CAPGOV';
 aLangKeys['pt']['logo 7']='Logo para feira literária na chapada diamantina';
+aLangKeys['pt']['site 10']='Desenvolvimento de diversas funcionalidades para o site responsivo';
 
 
     var lang = window.navigator.language.split("-")[0];
