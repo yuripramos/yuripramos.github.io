@@ -768,6 +768,8 @@ footer .box {
                 </div>
             </div>
         </div>
+
+        <?php echo "teste"; ?>
 </section>
 </body>
 
